@@ -23,7 +23,7 @@ def scrapeEmailsFromSinglePage(linkToScrape):
 			currentDomain = "http://"+currentDomain
 
 	#get the html from the page
-		os.system("./phantomjs myScraper.js "+linkToScrape)
+	os.system("./phantomjs myScraper.js "+linkToScrape)
 	currentPage = open("tempPage.txt",'r')
 
 	currentPageString = currentPage.read()
