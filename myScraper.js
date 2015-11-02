@@ -12,8 +12,7 @@ var link = system.args[1]
 //create and open the page
 var page = webPage.create(); 
 page.open(link, function(status){
-  //check the status of opening page
-  console.log('Status:' + status); 
+  
   // return the innerHTML
   var bodyHTML = page.evaluate(function() {
     return document.body.innerHTML; 
