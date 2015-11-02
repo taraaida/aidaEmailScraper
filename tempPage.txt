@@ -1,0 +1,271 @@
+
+    
+    <div class="main-container">
+
+        <div class="menu" ng-class="{'nav-open': $root.navOpen}">
+            <ul>
+                <li><span ng-click="changeRoute('home')">Home</span></li>
+                <li><span ng-click="changeRoute('product')">Product</span></li>
+                <li><span ng-click="changeRoute('about')">About</span></li>
+                <li><span ng-click="changeRoute('careers')">Careers</span></li>
+                <li><span ng-click="changeRoute('contact')">Contact</span></li>
+                <li><a href="http://blog.jana.com">Blog</a></li>
+                <li class="social-links">
+                    <a class="social-link twitter" href="https://twitter.com/Jana" target="_blank">Twitter</a>
+                    <a class="social-link fb" href="https://www.facebook.com/JanaMobile" target="_blank">Facebook</a>
+                    <a class="social-link linkedin" href="https://www.linkedin.com/company/jana" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-container-top">
+            <div class="logo" ng-click="changeRoute('home')"></div>
+        </div>
+        <a class="trigger" ng-click="navOpen = !navOpen;" ng-class="{'scrolled': scrolled}" scroll="400"><span>Menu</span></a>  
+
+        <!-- uiView:  --><div ui-view="" class="view-frame ng-scope" style=""><div class="page-home ng-scope">
+    <section class="hero">
+
+        <div class="overlay">
+            <video id="video" class="video" loop="true" autoplay="" preload="auto" poster="/static/images/home/header_video_poster.jpg">
+                <source src="/static/images/videos/jana_header_video.mp4" type="video/mp4">
+                <source src="/static/images/videos/jana_header_video.ogg" type="video/ogg">
+            </video>            
+        </div>
+
+        <div class="hero-text">
+            <h1>Set <span></span>Your <span></span>Apps <span></span>Free</h1>
+            <hr class="white">
+        </div>
+        <button class="btn" ng-click="scrollPage('.sub-hero')">LEARN MORE</button>
+    </section>
+
+    <section class="sub-hero">
+        <div class="inner">
+            <p>Eighty-five percent of the world’s mobile users are on restrictive pay-as-you-go plans. Some must work three hours to pay for one hour of connectivity. They can’t afford to use your app.</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="inner">
+            <h2 class="title">How Jana Works</h2>
+            <hr>
+            <div class="cards">
+                <div class="card">
+                    <h3>Over 25 million people</h3>
+                    <p>use the mCent Android app</p>
+                </div>
+                <div class="card">
+                    <h3>Within the mCent Android app,</h3>
+                    <p>they discover the most popular, valuable, and useful apps</p>
+                </div>
+                <div class="card">
+                    <h3>Each app they download</h3>
+                    <p>comes with free Internet,  made possible by our partnerships with 311 mobile operators</p>
+                </div>
+                <div class="card">
+                    <h3>Your app</h3>
+                    <p>becomes part of your user's everyday life</p>
+                </div>
+            </div>
+            <div class="phone">
+                <ul rn-carousel="" rn-carousel-auto-slide="4" rn-carousel-transition="fadeAndSlide" class="carousel image ng-scope" rn-carousel-index="carouselIndex">
+                    <li class="phone-inner inner1" style="display: inline-block; -webkit-transform: translate3d(0%, 0px, 0px); opacity: 1;"></li>
+                    <li class="phone-inner inner2" style="display: inline-block; -webkit-transform: translate3d(100%, 0px, 0px); opacity: 0;"></li>
+                    <li class="phone-inner inner3" style="display: inline-block; -webkit-transform: translate3d(200%, 0px, 0px); opacity: 0;"></li>
+                    <li class="phone-inner inner4" style="display: inline-block; -webkit-transform: translate3d(300%, 0px, 0px); opacity: 0;"></li>
+                </ul>
+            </div>
+            <div class="cta">
+                <a class="btn btn-blue" ui-sref="product" href="/product">Work with us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="case-study">
+        <div class="inner">
+            <ul rn-carousel="" rn-carousel-auto-slide="5" rn-carousel-transition="fadeAndSlide" class="carousel image ng-scope">
+                <li style="display: inline-block; -webkit-transform: translate3d(0%, 0px, 0px); opacity: 1;">
+                    <h2 class="title"><span>mCent users consume <strong><i>14.8x more data</i></strong> in social apps</span><br>than users acquired by other channels</h2>
+                    <hr class="white">
+                    <div class="graph">
+                        <div class="other">
+                            <p>other channels</p>
+                            <div class="bar"></div>
+                            <p>1x</p>
+                        </div>
+                        <div class="mcent">
+                            <p>mCent</p>
+                            <div class="bar bar-social"></div>
+                            <p>14.8x</p>
+                        </div>
+                    </div>
+                    <div class="brands">
+                        <div class="brand-icon google"></div>
+                        <div class="brand-icon twitter"></div>
+                        <div class="brand-icon wechat"></div>
+                    </div>
+                </li>
+                <li style="display: inline-block; -webkit-transform: translate3d(100%, 0px, 0px); opacity: 0;">
+                    <h2 class="title"><span>mCent users play <strong><i>3x more</i></strong> in gaming apps</span><br>than users acquired by other channels</h2>
+                    <hr class="white">
+                    <div class="graph">
+                        <div class="other">
+                            <p>other channels</p>
+                            <div class="bar"></div>
+                            <p>1x</p>
+                        </div>
+                        <div class="mcent">
+                            <p>mCent</p>
+                            <div class="bar bar-gaming"></div>
+                            <p>3x</p>
+                        </div>
+                    </div>
+                    <div class="brands">
+                        <div class="brand-icon mz"></div>
+                        <div class="brand-icon supercell"></div>
+                        <div class="brand-icon gumi"></div>
+                    </div>
+                </li>
+                <li style="display: inline-block; -webkit-transform: translate3d(200%, 0px, 0px); opacity: 0;">
+                    <h2 class="title"><span>mCent users browse <strong><i>3.8x more</i></strong> in e-commerce apps</span><br>than users acquired by other channels</h2>
+                    <hr class="white">
+                    <div class="graph">
+                        <div class="other">
+                            <p>other channels</p>
+                            <div class="bar"></div>
+                            <p>1x</p>
+                        </div>
+                        <div class="mcent">
+                            <p>mCent</p>
+                            <div class="bar bar-ecommerce"></div>
+                            <p>3.8x</p>
+                        </div>
+                    </div>
+                    <div class="brands">
+                        <div class="brand-icon amazon"></div>
+                        <div class="brand-icon olx"></div>
+                        <div class="brand-icon flipkart"></div>
+                    </div>
+                </li>
+                <div class="rn-carousel-controls ng-scope">
+                    <img class="rn-carousel-control rn-carousel-control-prev ng-scope" ng-click="prevSlide()" src="/static/images/ic_keyboard_arrow_left.svg" height="56px" width="56px">
+                    <img class="rn-carousel-control rn-carousel-control-next ng-scope" ng-click="nextSlide()" src="/static/images/ic_keyboard_arrow_right.svg" height="56px" width="56px">
+                </div>
+            </ul>
+
+        </div>
+        <div ui-sref="contact" class="btn" href="/contact">Contact Us</div>
+    </section>
+
+    <section class="data-viz">
+        <div class="inner">  
+            <h2 class="title">We’ve driven <strong><i>3.3 billion MB</i></strong> of app usage for our clients</h2>
+            <h3 class="subtitle">That's equivalent to...</h3>
+            <div class="item-container">
+                <div class="data-item music">
+                    <div class="item-inner">
+                        <h2>6,000</h2>
+                        <h3>YEARS</h3>
+                        <div class="item-divider"></div>
+                        <div class="bottom">
+                            <div class="icon"></div>
+                            <p>STREAMING MUSIC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="data-item apps">
+                    <div class="item-inner">
+                        <h2>800</h2>
+                        <h3>MILLION</h3>
+                        <div class="item-divider"></div>
+                        <div class="bottom">
+                            <div class="icon"></div>
+                            <p>APP DOWNLOADS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="data-item posts">
+                    <div class="item-inner">
+                        <h2>13</h2>
+                        <h3>BILLION</h3>
+                        <div class="item-divider"></div>
+                        <div class="bottom">
+                            <div class="icon"></div>
+                            <p>SOCIAL MEDIA POSTS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="btn btn-blue" ui-sref="about" href="/about">Learn More</a>
+        </div>
+    </section>
+
+    <section class="fact-images">
+        <div class="inner">
+            <!-- ngRepeat: fact in factImages --><div ng-repeat="fact in factImages" class="fact ng-scope">
+                <div class="fact-text">
+                    <p class="ng-binding">Manolo is selling items on OLX</p>
+                </div>
+                <img ng-src="/static/images/photo_thumb_0.jpg" class="image" src="/static/images/photo_thumb_0.jpg">
+            </div><!-- end ngRepeat: fact in factImages --><div ng-repeat="fact in factImages" class="fact ng-scope">
+                <div class="fact-text">
+                    <p class="ng-binding">Paolo is getting up-to-date sports news from Twitter</p>
+                </div>
+                <img ng-src="/static/images/photo_thumb_2.jpg" class="image" src="/static/images/photo_thumb_2.jpg">
+            </div><!-- end ngRepeat: fact in factImages --><div ng-repeat="fact in factImages" class="fact ng-scope">
+                <div class="fact-text">
+                    <p class="ng-binding">Carla uses WeChat to communicate with family in Los Angeles, for free</p>
+                </div>
+                <img ng-src="/static/images/photo_thumb_4.jpg" class="image" src="/static/images/photo_thumb_4.jpg">
+            </div><!-- end ngRepeat: fact in factImages --><div ng-repeat="fact in factImages" class="fact ng-scope">
+                <div class="fact-text">
+                    <p class="ng-binding">With mCent, Sanjay never needs to buy a data plan for his phone again</p>
+                </div>
+                <img ng-src="/static/images/photo_thumb_5.jpg" class="image" src="/static/images/photo_thumb_5.jpg">
+            </div><!-- end ngRepeat: fact in factImages -->
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Join the World’s Most Transformative Brands</h2>
+        <div ng-click="changeRoute('contact')" class="btn btn-blue">Contact Us</div>
+    </section>
+</div>
+</div>
+
+        <footer>© 2015 Jana. All Rights Reserved. Make the Internet free for the next billion.</footer>
+
+    </div>
+
+    <script src="/static/dist/application.min.js"></script>
+
+    <script type="text/javascript">
+        // Google Analytics
+        var ga_track_id = window.location.host.indexOf("jana.com") >= 0 ? "UA-28772851-2" : "UA-123-1";
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', ga_track_id, 'auto');
+        ga('require', 'displayfeatures');
+
+        // Crazyegg
+        setTimeout(function(){var a=document.createElement("script");
+        var b=document.getElementsByTagName("script")[0];
+        a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0028/6997.js?"+Math.floor(new Date().getTime()/3600000);
+        a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+        // JobScore
+        (function(d, s, c) {
+          if (window._jobscore_loader) { return; } else { window._jobscore_loader = true; }
+          var o = d.createElement(s); o.type = 'text/javascript'; o.async = true;
+          var sc = d.getElementsByTagName(s)[0]; sc.parentNode.insertBefore(o, sc);
+          o.src = ('https:' == d.location.protocol ? 'https:' : 'http:') + '//widgets.jobscore.com/jobs/' + c + '/widget.js';
+        })(document, 'script', 'jana');
+    </script>
+    <script type="text/javascript" src="https://www.googleadservices.com/pagead/conversion_async.js" charset="utf-8"></script>
+
+
