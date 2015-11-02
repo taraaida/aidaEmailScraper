@@ -1,6 +1,6 @@
 # aidaEmailScraper
 
-scrapeEmails.py is a python script that will list all emails found on a given internet domain (and  subdomains of the domain). Run the program by typing into the console: python scrapeEmails.py [full-url]. For example: 
+scrapeEmails.py is a python script that will list all emails found on a given internet domain (and  subdomains of the domain). Run the program by typing into the command line: python scrapeEmails.py [full-url]. For example: 
 
 python scrapeEmails.py http://www.jana.com 
 
