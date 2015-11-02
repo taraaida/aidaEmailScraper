@@ -8,5 +8,4 @@ Running the script requires the BeautifulSoup library (which I have included) as
 
 I have also included two versions of the email script. The first "scrapeEmails.py" is general and will search for emails on any site on the domain or subdomains of the submitted domain. I found that running this on Jana took a long time (going through all the links on blog.jana.com for example), so I included a version "scrapeJEmails-NoTechOrBlog.py" that scrapes jana.com minus the tech and blog subdomains. 
 
-
-
+Note: this script does not scrape pages that are linked to via javascript

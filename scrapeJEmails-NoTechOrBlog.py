@@ -37,7 +37,8 @@ def scrapeEmailsFromSinglePage(linkToScrape):
 		if email not in allEmails: 
 			allEmails.append(email)
 
-	#find all links on page using BeautifulSoup object
+	#find all links on page using BeautifulSoup object 
+	# NOTE: this does not handle linking to pages using javascript
 	soupObjectOfCurrentPage = BeautifulSoup(currentPageString, "html.parser")
 	allLinks = soupObjectOfCurrentPage.find_all('a',href=True)
 
@@ -47,7 +48,7 @@ def scrapeEmailsFromSinglePage(linkToScrape):
 	for link in allLinks: 
 
 		#try to filter down to hyperlinks
-		if "mailto" not in link and "javascript:" not in link and "#" not in link: 
+		if "mailto" not in link and "javascript:" not in link: 
 
 			#if http in the link, then nothing to append to scrape the link
 			if "http" in link['href']: 
